@@ -13,7 +13,7 @@ function downloadImages(){
 		return new Promise((resolve,reject) => {
 			const img = new Image();
 			img.onload = () => resolve(img);
-			img.onerror = () => reject(`ailed to load image's URL: ${image.url}`);
+			img.onerror = () => reject(`Failed to load image's URL: ${image.url}`);
 		    img.src = url;
 		});
 	});
