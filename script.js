@@ -26,6 +26,7 @@ function downloadImages(){
 	})
 	.catch(error => {
 		console.log(error);
-	})
+	});
 }
-document.getElementById('download-images-button').addEventListener('click',downloadImages);
+document.getElementById('download-images-button').
+	addEventListener('click',downloadImages);
