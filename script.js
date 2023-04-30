@@ -10,7 +10,7 @@ const images = [
 
 function downloadImages(){
 	const promises = images.map(url => {
-		return new promise((resolve,reject) => {
+		return new Promise((resolve,reject) => {
 			const img = new Image();
 			img.onload = () => resolve(img);
 			img.onerror = () => reject(`ailed to load image's URL: ${image.url}`);
